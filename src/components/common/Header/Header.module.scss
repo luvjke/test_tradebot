@@ -1,0 +1,36 @@
+@import '../../../scss/mixins/text.scss';
+
+.header {
+  margin: 25px 15px;
+
+
+  .nav{
+    max-width: 100vw;
+    width: 100%;
+
+    .list{
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      
+      .menu_icon{
+        width: 20px;
+      }
+
+      .title{
+        color:$main-blue;
+        font-size: 18px;
+        font-weight:bold;
+      }
+      
+      .refresh_icon{
+        width: 20px;
+      }
+    }
+   }
+   
+  
+}
+
+

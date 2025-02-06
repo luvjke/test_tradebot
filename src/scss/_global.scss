@@ -1,0 +1,29 @@
+@import './mixins/text.scss';
+
+body {
+  background-image:
+  url('/assets/layers/bg/bg_2.png'),
+  url('/assets/layers/bg/bg.png');
+  background-position: center, center; 
+  background-repeat: no-repeat, no-repeat; 
+  background-size: cover, cover;
+  height: 100vh;
+  position: relative;
+  text-size-adjust: none;
+  width: 100%;
+}
+
+* {
+  @include textBold-16();
+  list-style: none;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
