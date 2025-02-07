@@ -1,0 +1,16 @@
+.overlay_images {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .second_overlay{
+        display: flex;
+        gap: 80px;
+    }
+
+    .overlay_image{
+        height: 60px;    
+        width: 60px; 
+    }
+}

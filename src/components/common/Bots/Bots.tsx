@@ -2,6 +2,7 @@ import React from 'react';
 import { IBotData, userData } from 'src/common/utils';
 import { ToggleButtons } from 'src/components/ui/ToggleButtons';
 import { useTimeFrame } from 'src/hooks/useTimeFrame';
+import { Sparks } from 'src/components/ui/Sparks';
 
 import styles from './Bots.module.scss';
 export const Bots = () => {
@@ -55,6 +56,7 @@ export const Bots = () => {
         ))}
       </ul>
       <ToggleButtons timeFrames={timeFrames} onTimeFrameChange={handleTimeFrameChange} />
+      <Sparks />
     </div>
   );
 };
