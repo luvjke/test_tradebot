@@ -13,7 +13,7 @@
   }
 
   &:hover {
-    background-color: $black-theme;
+    opacity: 0.8;
   }
 }
 
@@ -22,53 +22,19 @@
   left: 16px;
 }
 
-.icon_button {
-  padding-left: 35px;
+
+.custom{
+  background:none;
+  border: 1px solid $main-blue;
+  border-radius: 15px;
+  padding: 3px;
+  width: 60px
 }
 
-.filled {
-  background-color: $sub-gray;
-  color: $main-white;
-}
-
-.outline {
-  background-color: $sub-gray;
-  border: none;
-  padding: 10px 5px;
-}
-
-.custom {
-  background-color: $sub-gray;
-  border: $search-border;
-  border-radius: 0;
-  border-radius: 0 6px 6px 0;
-  padding: 13px 25px;
-  transition: background-color 200ms ease;
-}
-
-.pagination {
-  background-color: $black-theme;
-  border: $search-border;
-  max-width: 990px;
-  padding: 13px 25px;
-  width: 100%;
-
-  &:hover {
-    background-color: $black-header;
-  }
-}
-
-.advanced {
-  background-color: $black-theme;
-  border: $search-border;
-  border-radius: 2px;
-  padding: 13px 25px;
-
-  &:hover {
-    background-color: $black-header;
-  }
-}
-
-.label {
-  @include textSemibold-16();
+.regular {
+  @include textRegular-16();
+  align-items: center;
+  display: flex;
+  font-size: 10px;
+  justify-content: center;
 }

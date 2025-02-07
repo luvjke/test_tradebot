@@ -4,9 +4,15 @@ import redIcon from '../assets/layers/Bots/3/red.png';
 import blueIcon from '../assets/layers/Bots/4/blue.png';
 import emptyIcon from '../assets/layers/Bots/5/empty.png';
 import orangeIcon from '../assets/layers/Bots/6/orange.png';
+import menuIcon from '../assets/layers/Tool_bar/1/1.png';
+import searchIcon from '../assets/layers/Tool_bar/2/2.png';
+import buyIcon from '../assets/layers/Tool_bar/3/ico.png';
+import coinIcon from '../assets/layers/Tool_bar/4/4.png';
+import profileIcon from '../assets/layers/Tool_bar/5/5.png';
+
 export interface IBotData {
   name: string;
-  icon?: string;
+  icon: string;
   cost?: number;
   '24h'?: number;
   '7d'?: number;
@@ -91,3 +97,10 @@ export const userData: IUserData = {
     },
   ],
 };
+export const footerData = [
+  { icon: menuIcon, title: 'Dashboard' },
+  { icon: searchIcon, title: 'Megabot' },
+  { icon: buyIcon, title: 'Bot market' },
+  { icon: coinIcon, title: 'Coin prices' },
+  { icon: profileIcon, title: 'Profile' },
+];

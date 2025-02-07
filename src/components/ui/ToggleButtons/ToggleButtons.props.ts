@@ -1,12 +1,4 @@
-export interface GroupToggleProps {
-  items: readonly Variant[];
-  defaultValue?: string;
-  onClick?: (value: Variant['value']) => void;
-  selectedValue?: Variant['value'];
+export interface ToggleButtonsProps {
+  timeFrames: { value: string; label: string }[];
+  onTimeFrameChange: (newTimeFrame: string) => void;
 }
-
-export type Variant = {
-  disabled?: boolean;
-  name: string;
-  value: string;
-};

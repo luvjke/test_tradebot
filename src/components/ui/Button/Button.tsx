@@ -14,16 +14,19 @@ export const Button = ({
   tag = 'button',
   href,
   state,
+  type,
+  lversion,
 }: ButtonProps) => {
   const buttonClassNames = classNames(
     styles.button,
     version && styles[version],
     icon && styles.icon_button
   );
+  const labelClassNames = classNames(styles.label, lversion && styles[lversion]);
   return tag === 'button' ? (
-    <button className={buttonClassNames} onClick={onClick} disabled={disabled}>
+    <button className={buttonClassNames} onClick={onClick} disabled={disabled} type={type}>
       {icon && <span className={styles.icon}>{icon}</span>}
-      <span className={styles.label}>{label}</span>
+      <span className={labelClassNames}>{label}</span>
     </button>
   ) : (
     <Link to={href ?? ''} className={buttonClassNames} state={state}>
