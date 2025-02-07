@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { IBotData, userData } from 'src/common/utils';
 import { ToggleButtons } from 'src/components/ui/ToggleButtons';
+import { useTimeFrame } from 'src/hooks/useTimeFrame';
 
 import styles from './Bots.module.scss';
 export const Bots = () => {
-  const [timeFrame, setTimeFrame] = useState<string>('24h');
+  const { timeFrame, setTimeFrame } = useTimeFrame();
 
   const timeFrames = [
     { value: '24h', label: '24 hours' },
@@ -27,6 +28,7 @@ export const Bots = () => {
         return 0;
     }
   };
+
   const handleTimeFrameChange = (newTimeFrame: string) => {
     setTimeFrame(newTimeFrame);
   };
